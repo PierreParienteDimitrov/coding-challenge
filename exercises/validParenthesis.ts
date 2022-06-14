@@ -1,6 +1,21 @@
+// const str = '({[({})]})';
+
 export const validParenthesis = (str) => {
-   // get first character code
-   // check if opposite code is in the string
-   // if not, return false
-   // if yes
+   const brackets = '(){}[]';
+   const stack = [];
+
+   for (let bracket of str) {
+      let bracketIndex = brackets.indexOf(bracket);
+
+      if (bracketIndex % 2 === 0) {
+         stack.push(bracketIndex + 1);
+      } else {
+         if (stack.pop() !== bracketIndex) {
+            return false;
+         }
+      }
+   }
+
+   console.log(stack.length === 0);
+   return stack.length === 0;
 };
