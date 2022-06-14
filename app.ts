@@ -1,6 +1,7 @@
-import { twoSums } from './twosums';
+import { binarySearch } from './exercises/binarySearch';
 
-const arr: number[] = [-1, -2, -3, -4, -5];
-const target = -8;
+const arr = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
+const target = 7;
+const search = 8;
 
-twoSums(arr, target);
+binarySearch(arr, target);

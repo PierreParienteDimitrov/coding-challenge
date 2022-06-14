@@ -1,7 +1,6 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
-const twosums_1 = require("./twosums");
-const arr = [1, 2, 5, 3, 7, 8];
-const target = 10;
-(0, twosums_1.twoSums)(arr, target);
+const longestComminPrefix_1 = require("./exercises/longestComminPrefix");
+const arrs = ['flower', 'flow', 'flight'];
+(0, longestComminPrefix_1.longestCommonPrefix)(arrs);
 //# sourceMappingURL=app.js.map

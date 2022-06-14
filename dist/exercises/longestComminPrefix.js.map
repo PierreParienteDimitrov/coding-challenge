@@ -1,0 +1,1 @@
+{"version":3,"file":"longestComminPrefix.js","sourceRoot":"","sources":["../../exercises/longestComminPrefix.ts"],"names":[],"mappings":";;;AAAO,MAAM,mBAAmB,GAAG,CAAC,IAAI,EAAE,EAAE;IACzC,IAAI,CAAC,GAAG,CAAC,CAAC,EAAE,EAAE,CAAC,EAAE,EAAE;QAChB,OAAO,CAAC,GAAG,CAAC,EAAE,CAAC,CAAC,CAAC,CAAC,CAAC;IACtB,CAAC,CAAC,CAAC;AACN,CAAC,CAAC;AAJW,QAAA,mBAAmB,uBAI9B"}
