@@ -1,8 +1,9 @@
-import { validParenthesis } from './exercises/validParenthesis';
+import { mergeTwoLists } from './exercises/mergeTwoLists';
 
-const arr = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
+const arr1 = [1, 2, 4];
+const arr2 = [1, 3, 4];
 const target = 7;
 const search = 8;
 const str = '[()]';
 
-validParenthesis(str);
+mergeTwoLists(arr1, arr2);
