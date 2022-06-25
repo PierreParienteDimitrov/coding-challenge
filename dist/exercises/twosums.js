@@ -1,7 +1,7 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
-exports.twoSums = void 0;
-const twoSums = (arr, target) => {
+exports.twoSums3 = exports.twoSums2 = exports.twoSums1 = void 0;
+const twoSums1 = (arr, target) => {
     //    const initialArr = [...arr];
     const sortedArray = [...arr].sort((a, b) => a - b);
     let newArr;
@@ -31,5 +31,35 @@ const twoSums = (arr, target) => {
     }
     return output;
 };
-exports.twoSums = twoSums;
+exports.twoSums1 = twoSums1;
+const twoSums2 = (arr, target) => {
+    for (let i = 0; i < arr.length; i++) {
+        const numberToFind = target - arr[i];
+        for (let j = i + 1; j < arr.length; j++) {
+            if (arr[j] === numberToFind) {
+                console.log([arr.indexOf(arr[i]), arr.indexOf(arr[j])]);
+                return [arr.indexOf(arr[i]), arr.indexOf(arr[j])];
+            }
+        }
+    }
+    console.log(null);
+    return;
+};
+exports.twoSums2 = twoSums2;
+const twoSums3 = (arr, target) => {
+    const numsMap = {};
+    for (let p = 0; p < arr.length; p++) {
+        const currentMapVal = numsMap[arr[p]];
+        if (currentMapVal >= 0) {
+            console.log(currentMapVal, p);
+            return [currentMapVal, p];
+        }
+        else {
+            const numberToFind = target - arr[p];
+            numsMap[numberToFind] = p;
+        }
+    }
+    return null;
+};
+exports.twoSums3 = twoSums3;
 //# sourceMappingURL=twosums.js.map
